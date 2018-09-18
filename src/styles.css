@@ -1,4 +1,11 @@
 
+/*Remove this when I uncomment app.component */
+html, body {
+  height: 100%;
+}
+
+
+
 body {
   padding: 0;
   margin: 0;

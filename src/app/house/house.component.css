@@ -1,0 +1,6 @@
+.wave {
+  background: url(../../assets/Graphics/wave.svg) repeat center;
+  width: 100%;
+  position: absolute;
+  height:7px;
+}

@@ -1,14 +1,68 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TheHeronHouse</title>
   <base href="/">
+  <title>The Heron House</title>
 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+  <!-- JQuery import for my Paralax -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    function myImageFunction() {
+      var x = document.getElementById("hero-image");
+      if (x.className === "heron-bg-01") {
+        x.className += " heron-bg-02";
+      } else {
+        x.className = "heron-bg-01";
+      }
+    }
+
+
+
+    // ---------------  I have commented out the console's. Use these to test the code -------------
+    // ---------------  This code is for the the function trigger when "thumb-screens" is reached -------------
+    $(window).scroll(function(){
+
+
+      var $wScroll = $(window).scrollTop();
+
+      // console.log($wScroll);
+
+      var $position = $('.thumb-screens').offset().top ;
+      // console.log($position);
+
+
+      if($wScroll > $position) {
+
+        // console.warn('Working');
+
+        $('.learn-more-layout .hh-panel').addClass('active');
+
+      }
+
+
+    });
+
+
+
+  </script>
+
 </head>
 <body>
-  <app-root></app-root>
+  <hh-app></hh-app>
 </body>
 </html>

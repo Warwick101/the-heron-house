@@ -1,11 +1,31 @@
 <div class="header">
+  <div class="content--container header__nav">
+    <hh-icons [inlineSVG]="'#icon__logo'"
+               [injectComponent]="true"
+               class="header__nav-logo">
+    </hh-icons>
+    <ul class="header__nav-list">
+      <a [routerLink]="['']">Home</a>
+      <a [routerLink]="['/history']">History</a>
+      <a>Our Team</a>
+      <a>Patients</a>
+      <a>Services</a>
+      <a>Contacts</a>
+    </ul>
+    <div class="header__nav-menu">
+      <hh-icons [inlineSVG]="'#menu-icon'"
+                 class="icon">
+      </hh-icons>
+    </div>
+  </div>
+
+
 <ul class="topnav" id="myTopnav">
 
   <li>
     <div class="logo-icon">
       <a routerLink="/">
         <div class="circle"></div>
-        <img src="../../assets/Graphics/hh-logo.svg" alt="logo" class="logo">
 
       </a>
     </div>

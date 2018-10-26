@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {IconSystemComponent} from './icon-system.component';
+import { NgModule} from '@angular/core';
+import { CommonModule} from '@angular/common';
+import { IconSystemComponent } from './icon-system.component';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { AgmCoreModule } from '@agm/core';
-import {HttpClientModule} from '@angular/common/http';
-import {InlineSVGService} from 'ng-inline-svg/lib/inline-svg.service';
+import { HttpClientModule } from '@angular/common/http';
+import { InlineSVGService } from 'ng-inline-svg/lib/inline-svg.service';
 
 
 

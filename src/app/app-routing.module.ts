@@ -8,7 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
 
-  imports: [ BrowserModule,
+  imports: [
     RouterModule.forRoot([
       { path: 'home', component: MainComponent },
       { path: 'house', component: HouseComponent },
@@ -22,6 +22,6 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 
 
-export class AppRoutingModule {};
+export class AppRoutingModule {}
 
 

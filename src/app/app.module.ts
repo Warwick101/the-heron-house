@@ -17,7 +17,8 @@ import {SharedModule} from './shared/shared.module';
     SharedModule
   ],
 
-  declarations: [ AppComponent,
+  declarations: [
+    AppComponent,
     HeaderComponent,
     FooterComponent,
     MainComponent,

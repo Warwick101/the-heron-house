@@ -8,12 +8,13 @@ import { HouseComponent } from './house/house.component';
 import { HermanusComponent } from './hermanus/hermanus.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   imports: [
-
     BrowserModule,
     AppRoutingModule,
+    SharedModule
   ],
 
   declarations: [ AppComponent,
